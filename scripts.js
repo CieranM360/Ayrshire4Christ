@@ -74,3 +74,27 @@ document.addEventListener('DOMContentLoaded', function () {
     slideWrapper.appendChild(buttonContainer);
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener('mouseenter', () => {
+      const content = dropdown.querySelector('.dropdown-content');
+      content.style.display = 'block';
+      setTimeout(() => {
+        content.style.opacity = '1';
+        content.style.transform = 'translateY(0)';
+      }, 50);
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+      const content = dropdown.querySelector('.dropdown-content');
+      content.style.opacity = '0';
+      content.style.transform = 'translateY(-20px)';
+      setTimeout(() => {
+        content.style.display = 'none';
+      }, 300);
+    });
+  });
+});

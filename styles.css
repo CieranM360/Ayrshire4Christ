@@ -60,6 +60,66 @@
           text-shadow: 0 0 20px #11151b, 0 0 30px #f77062, 0 0 40px #f77062, 0 0 50px #f77062, 0 0 60px #f77062, 0 0 70px #f77062;
         }
       }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropbtn {
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 20px;
+        transition: color 0.3s;
+      }
+      
+      .dropbtn:hover {
+        color: #f77062;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: #0a0f14;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 0;
+        transition: all 0.3s ease;
+        transform: translateY(-20px);
+      }
+      
+      .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f77062;
+        color: #fff;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      @media screen and (max-width: 960px) {
+        .dropdown-content {
+          min-width: 100%;
+        }
+      
+        .dropbtn {
+          padding: 10px;
+        }
+      }
+      
       
       .navbar__links {
         color: #fff;
@@ -975,13 +1035,13 @@
     fill: rgba(0, 0, 0, 0.89);
     stroke: rgb(255, 109, 109);
     stroke-width: 0.25;
-    stroke-dasharray: 70% 30%; 
+    stroke-dasharray: 30% 70%; 
     stroke-dashoffset: 100%;
     -webkit-animation: draw 5s infinite linear;
     -moz-animation: draw 5s infinite linear;
     -o-animation: draw 5s infinite linear;
     -ms-animation: draw 5s infinite linear;
-    animation: draw 5s infinite linear;
+    animation: draw 8s infinite linear;
   }
 
   @keyframes draw {
@@ -1002,4 +1062,41 @@
     to {
       --border-angle: 1turn;
     }
+  }
+
+/* ------------------------------- */
+/* votd  Verse of the day          */
+/* ------------------------------- */
+
+
+  .votd-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0a0f14;
+  }
+  
+  .votd-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 350px;
+    max-width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    transform-style: preserve-3d;
+  }
+  
+  .votd-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .votd-reference {
+    font-size: 18px;
+    color: #777;
   }
