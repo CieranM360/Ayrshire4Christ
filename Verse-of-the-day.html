@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYRSHIRE4CHRIST</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+            <svg viewBox="0 0 250 60" class="custom-text">
+              <defs>
+                <linearGradient id="gradient">
+                  <stop offset="0%" stop-color="white" />
+                  <stop offset="50%" stop-color="white" />
+                  <stop offset="50%" stop-color="red" />
+                  <stop offset="100%" stop-color="red" />
+                </linearGradient>
+              </defs>
+              <text x="0" y="45" class="text">AYRSHIRE4CHRIST</text>
+            </svg>
+          </a> 
+                   
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/Find-A-Church.html" class="navbar__links">Find a Church</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Contact</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">About</a>
+          </li>
+
+          <nav class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn">Bible Study Tools ▼</button>
+              <div class="dropdown-content">
+                <a href="#">Bible Reading Plans</a>
+                <a href="#">Bible Study Guides</a>
+                <a href="#">Bible Commentaries</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Prayers ▼</button>
+              <div class="dropdown-content">
+                <a href="#">Prayers Guide</a>
+                <a href="#">Prayer Requests</a>
+                <a href="#">Prayer Wall</a>
+                <a href="#">Prayer Resources</a>
+              </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <div class="votd-main-container">
+      <div class="votd-container">
+        <h1>Verse of the Day</h1>
+        <p class="votd-text"></p>
+        <p class="votd-reference"></p>
+      </div>
+    </div>
+
+
+  
+  <div class="spacer layer4-footer"></div>
+
+
+  <footer class="footer">
+    <div class="footer__container custom-text-footer"> <!-- Added custom-text-footer class -->
+        <a href="/" id="navbar__logo">
+          <svg viewBox="0 0 250 60" class="custom-text">
+            <defs>
+              <linearGradient id="gradient">
+                <stop offset="0%" stop-color="white" />
+                <stop offset="50%" stop-color="white" />
+                <stop offset="50%" stop-color="red" />
+                <stop offset="100%" stop-color="red" />
+              </linearGradient>
+            </defs>
+            <text x="0" y="45" class="text text-footer">AYRSHIRE4CHRIST</text> <!-- Added text-footer class -->
+          </svg>
+        </a>
+      <nav class="footer__links">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Find-A-Church.html">Find a Church</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Recourses</a></li>
+            <li><a href="/steps-to-christ.html">Steps to Christ</a></li>
+          </ul>
+      </nav>
+    </div>
+  </footer>
+  
+  
+    </div>
+    <script src="votd.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
